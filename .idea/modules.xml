@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pppr/dao/dao.iml" filepath="$PROJECT_DIR$/pppr/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pppr/pojo/pojo.iml" filepath="$PROJECT_DIR$/pppr/pojo/pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pppr/pppr.iml" filepath="$PROJECT_DIR$/pppr/pppr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pppr/service/service.iml" filepath="$PROJECT_DIR$/pppr/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pppr/web_admin/web_admin.iml" filepath="$PROJECT_DIR$/pppr/web_admin/web_admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pppr/web_pro/web_pro.iml" filepath="$PROJECT_DIR$/pppr/web_pro/web_pro.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>时光轴_崔迎杰个人博客 </title>
+<meta name="keywords" content="个人博客,崔迎杰个人博客,个人博客模板,崔迎杰" />
+<meta name="description" content="崔迎杰个人博客" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/time.css" rel="stylesheet">
+<link href="css/m.css" rel="stylesheet">
+<script src="js/jquery.min.js" ></script>
+<script src="js/scrollReveal.js"></script>
+<script src="js/time.js" ></script>
+
+   <!-- 引入angular的js -->
+<script type="text/javascript" src="/plugins/angularjs/angular.min.js"></script>
+<!-- 引入分页相关的JS和CSS -->
+<script type="text/javascript" src="/plugins/angularjs/pagination.js"></script>
+<link rel="stylesheet" href="/plugins/angularjs/pagination.css">
+
+<script type="text/javascript" src="/js/base_pagination.js"></script>
+<script type="text/javascript" src="/js/controller/baseController.js"></script>
+<script type="text/javascript" src="/js/controller/essayController.js"></script>
+<script type="text/javascript" src="/js/service/essayService.js"></script>
+
+</head>
+<body ng-app="essay" ng-controller="essayController" ng-init="findAll()">
+<header class="header-navigation" id="header">
+  <nav>
+    <div class="logo"><a href="index.html">崔迎杰个人博客</a></div>
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+    <ul id="starlist">
+      <li><a href="index.html">网站首页</a></li>
+      <li><a href="about.html">关于我</a></li>
+
+
+      <li class="menu"><a href="#">我的爱好</a>
+        <ul class="sub">
+          <li><a href="ttt.html">我的随笔</a></li><li><a href="photo.html">我的相册</a></li>
+          <li><a href="meiwen.html">美文欣赏</a></li>
+        </ul>
+      </li>
+      <li><a href="list.html">慢生活</a></li>
+      <li><a href="time.html">时间轴</a></li>
+    </ul>
+    <div class="searchbox">
+      <div id="search_bar" class="search_bar">
+        <form  id="searchform" action="[!--news.url--]e/search/index.php" method="post" name="searchform">
+          <input class="input" placeholder="想搜点什么呢.." type="text" name="keyboard" id="keyboard">
+          <input type="hidden" name="show" value="title" />
+          <input type="hidden" name="tempid" value="1" />
+          <input type="hidden" name="tbname" value="news">
+          <input type="hidden" name="Submit" value="搜索" />
+          <p class="search_ico"> <span></span></p>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<article>
+
+
+  <div class="timebox" >
+    <ul ng-repeat="entity in list">
+      <li><span>2019-03-14</span><i>
+        <a href="info.html" target="_blank">今天出门办了一张招商银行的卡,居然还送了一袋洗衣液</a></i></li>
+      <li><span>2019-03-11</span><i>
+        <a href="info.html" target="_blank">我有吃到一种版本的臊子面</a></i></li>
+      <li><span>2019-03-07</span><i>
+        <a href="info.html" target="_blank">思考一下人生</a></i></li>
+      <li><span>2019-03-05</span><i>
+        <a href="info.html" target="_blank">加油</a></i></li>
+      <li><span>2019-02-28</span><i>
+        <a href="info.html" target="_blank">这是岐山臊子面,,,,,,</a></i></li>
+      <li><span>2019-02-26</span><i>
+        <a href="info.html" target="_blank">大厦不错,可惜没找见吃饭的地方,而且还贼远</a></i></li>
+      <li><span>2019-02-05</span><i>
+        <a href="info.html" target="_blank">过年什么的不重要,我的眼中只有代码</a></i></li>
+      <li><span>2019-02-02</span><i>
+        <a href="info.html" target="_blank">已经病入膏肓</a></i></li>
+      <li><span>2019-01-26</span><i>
+        <a href="info.html" target="_blank">兄弟新婚快乐</a>
+      </i></li>
+
+      <li><span>2019-01-24</span><i>
+        <a href="info.html" target="_blank">排队的时候给解放军哥哥让了个路,还说了个谢谢</a>
+      </i></li>
+      <li><span>2019-01-24</span><i>
+        <a href="info.html" target="_blank">吃顿好的,溜了溜了</a>
+      </i></li>
+      <li><span>2019-01-21</span><i>
+        <a href="info.html" target="_blank">失眠中</a>
+      </i></li>
+      <li><span>2019-01-11</span><i>
+        <a href="info.html" target="_blank">优秀</a>
+      </i></li>
+      <li><span>2019-01-02</span><i>
+        <a href="info.html" target="_blank">往事清零,做回自己</a>
+      </i></li>
+      <li><span>2018-12-30</span><i>
+        <a href="info.html" target="_blank">意兴阑珊</a>
+      </i></li>
+      <li><span>2018-12-21</span><i>
+      <a href="info.html" target="_blank">怎么这么多了,生无可恋,改日念佛去了</a>
+      </i></li>
+      <li><span>2018-12-14</span><i>
+      <a href="info.html" target="_blank">我等着</a>
+       </i></li>
+      <li><span>2018-12-13</span><i>
+        <a href="info.html" target="_blank">愿今晚没有噩梦</a>
+      </i></li>
+      <li><span>2018-12-08</span><i>
+        <a href="info.html" target="_blank">这个风啊,吹的我差点一口气没上来</a>
+      </i></li>
+      <li><span>2018-12-02</span><i>
+        <a href="info.html" target="_blank">进去的时候还是白天,出来就黑了,我是在里面呆了多久</a>
+      </i></li>
+      <li><span>2018-11-24</span><i>
+        <a href="info.html" target="_blank">一首夜曲,送给不得不熬夜的人儿</a>
+      </i></li>
+      <li><span>2018-11-14</span><i>
+        <a href="info.html" target="_blank">一定是最近亏待了自己,不然身体也不会这样了</a>
+      </i></li>
+      <li><span>2018-10-18</span><i>
+        <a href="info.html" target="_blank">搞我一晚上</a>
+      </i></li>
+      <li><span>2018-09-01</span><i>
+        <a href="info.html" target="_blank">一晚上的梦,一部电视连续剧产生了</a>
+      </i></li>
+      <li><span>2018-08-21</span><i>
+        <a href="info.html" target="_blank">男人,对自己要狠一点</a>
+      </i></li>
+      <li><span>2018-08-21</span><i>
+        <a href="info.html" target="_blank">我:小明,你愿意变成一个女生吗?小明:愿意啊.我:为什么?小明:因为你可以养我啊!!!</a>
+      </i></li>
+      <li><span>2018-08-17</span><i>
+        <a href="info.html" target="_blank">生活要有仪式感->_->凌恒</a>
+      </i></li>
+      <li><span>2018-08-12</span><i>
+        <a href="info.html" target="_blank">出门的时候,我说,不带伞了,大不了淋着雨回去。现在,,果然淋着雨,,,</a>
+      </i></li>
+      <li><span>2018-08-11</span><i>
+        <a href="info.html" target="_blank">最让人羡慕的不是有很多人追,而是始终有一个不离不弃的人</a>
+      </i></li>
+      <li><span>2018-07-15</span><i>
+        <a href="info.html" target="_blank">过去,东西坏了只想修;现在,东西坏了只想换.可能,我过时了吧.</a>
+      </i></li>
+      <li><span>2018-06-28</span><i>
+        <a href="info.html" target="_blank">我才想你,月亮就亮了,wldlp</a>
+      </i></li>
+
+
+
+
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+ <!-- <div class="timebox" >
+    <ul ng-repeat="entity in list">
+      <li><span>{{entity.eTime}}</span><i><a href="info.html/{{entity.eId}}" target="_blank">{{entity.eTitle}}</a></i></li>
+    </ul>
+  </div>-->
+
+
+  <p class="pagelist">
+    <!--<tm-pagination conf="paginationConf"></tm-pagination>-->
+  </p>
+
+</article>
+<footer>
+  <p>Design by <a href="index.html" target="_blank">崔迎杰个人博客</a> <a href="/">晋ICP备11002373号-1</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a>
+</body>
+</html>
